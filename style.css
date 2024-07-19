@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3c4fe;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  /* border: 2px solid red; */
+  width: 75%;
+  display: flex;
+  /* justify-content: space-between; */
+  max-width: 1000px;
+  gap: 90px;
+}
+
+.card1 {
+  border: 2px solid #26235c;
+  height: 600px;
+  width: 40%;
+  border-radius: 36px;
+  background-color: #26235c;
+  padding: 6px;
+  border-bottom: 15px solid yellow;
+}
+
+.card2 {
+  /* border: 2px solid #26235c; */
+  height: 600px;
+  width: 40%;
+  border-radius: 36px;
+  background-color: #fcfcfd;
+  padding: 6px;
+  border-bottom: 15px solid yellow;
+}
+
+.image1 .logo {
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.card2 .image1 .logo {
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.card1 .image1 {
+  padding: 4px;
+}
+.card1 .image2 {
+  padding: 4px;
+}
+.card1 .image2 .cartoon {
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  margin-left: 110px;
+  margin-top: 10px;
+  border-right: 3px solid yellow;
+}
+
+.card2 .image2 .cartoon {
+  border-radius: 50%;
+  margin-left: 110px;
+  margin-top: 10px;
+  border-right: 3px solid yellow;
+}
+.form .name {
+  color: #fff;
+  margin-top: 25px;
+  margin-left: 75px;
+}
+
+.card2 .form .name {
+  color: hsl(0deg 0% 7.06%);
+}
+.form .title {
+  color: rgb(131 120 188);
+  margin-left: 110px;
+  margin-top: 5px;
+}
+
+.form p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card2 .form p {
+  /* border: 2px solid red; */
+  color: #26235c;
+}
+
+.email {
+  background-color: rgb(131 120 188);
+  padding-block: 6px;
+  width: 220px;
+  margin-left: 80px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.card2 .email {
+  background-color: #26235c;
+}
+
+.email .mail {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.footer {
+  /* border: 2px solid green; */
+  font-size: 20px;
+  color: #d3c4fe;
+  margin-left: 40px;
+  word-spacing: 32px;
+  margin-bottom: 150px;
+}
+
+.card2 .footer {
+  color: #26235c;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    justify-content: flex-start; /* Align items to the start on smaller screens */
+    height: auto;
+    padding: 10px;
+  }
+  .container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    gap: 30px; /* Reduce the gap between cards on smaller screens */
+  }
+  .card1,
+  .card2 {
+    width: 112%; /* Make cards full width on smaller screens */
+    height: 600px;
+  }
+  .image1 .logo,
+  .card2 .image1 .logo {
+    margin-left: 5px; /* Adjust logo position on smaller screens */
+    margin-top: 5px;
+  }
+  /* .form .name .form .title {
+      margin-left: 70px; Adjust form text position on smaller screens
+   } */
+  .email {
+    width: 228px; /* Adjust email input width on smaller screens */
+    margin-left: 80px; /* Adjust email input margin on smaller screens */
+  }
+  .footer {
+    margin-left: 40px; /* Adjust footer margin on smaller screens */
+  }
+}
